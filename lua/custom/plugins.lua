@@ -25,7 +25,7 @@ local plugins = {
     event = "InsertEnter",
     -- You can also have it load at immediately at
     -- startup by commenting above and uncommenting below:
-    -- lazy = false
+    lazy = false,
     opts = overrides.copilot,
   },
   -- Override plugin definition options
