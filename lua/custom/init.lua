@@ -6,3 +6,4 @@
 --   command = "tabdo wincmd =",
 -- })
 
+vim.g.tutor_is_loaded = 1

@@ -61,4 +61,27 @@ require("lspconfig").lua_ls.setup {
   },
 }
 
+require("lspconfig").gopls.setup {
+  settings = {
+    gopls = {
+      ui = {
+        completion = {
+          usePlaceholders = true,
+        }
+      }
+    }
+  }
+}
+
+require("lspconfig").ds_pinyin_lsp.setup {
+  init_options = {
+    db_path = "/Documents and Settings/20220/AppData/Local/nvim/pinyin_db/dict.db3",
+    completion_on = false,
+    match_as_same_as_input = true,
+  },
+  filetypes = {
+    "*"
+  }
+}
+
 return M
