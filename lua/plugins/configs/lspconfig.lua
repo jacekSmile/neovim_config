@@ -75,7 +75,7 @@ require("lspconfig").gopls.setup {
 
 require("lspconfig").ds_pinyin_lsp.setup {
   init_options = {
-    db_path = "/Documents and Settings/20220/AppData/Local/nvim/pinyin_db/dict.db3",
+    db_path = "/home/jacek/.config/nvim/pinyin_db/dict.db3",
     completion_on = false,
     match_as_same_as_input = true,
   },
@@ -83,5 +83,7 @@ require("lspconfig").ds_pinyin_lsp.setup {
     "*"
   }
 }
+
+require("lspconfig").pyright.setup {}
 
 return M

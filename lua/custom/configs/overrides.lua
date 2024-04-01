@@ -42,7 +42,10 @@ M.mason = {
     "clang-format",
 
     -- go stuff
-    "gopls"
+    "gopls",
+
+    -- python stuff
+    "pyright"
   },
 }
 
